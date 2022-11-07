@@ -23,8 +23,6 @@
 
 def q3(prices):
     # Escreva seu código aqui
-    def q3(prices):
-    # Escreva seu código aqui
     lucro_max = 0
     for i in range(len(prices) -1):
         for j in range(i + 1,len(prices)):
