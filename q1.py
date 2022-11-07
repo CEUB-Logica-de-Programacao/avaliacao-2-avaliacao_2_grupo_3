@@ -20,16 +20,17 @@
 # ```
 
 def q1(names, heights):
-    names = ["Mary","John","Emma"]
-    heights = [180,165,170]
-    dict_nomes_alturas = {}
-    for i,j in zip(names, heights):
-        dict_nomes_alturas[i] = j
-        dict_ordenado = sorted(dict_nomes_alturas.items(), key=lambda item : item[1], reverse = True)
-        lista_altura = []
-        for k,v in dict_ordenado:
-            lista_altura.append(k)
-    return lista_altura
+    dict = {}
+    y = []
+    for i in range(0,len(names)):
+        dict[heights[i]] = names[i]
+
+    heights2 = sorted(heights)
+    heights2 = list(reversed(heights2))
+
+    for i in heights2:
+        y.append(dict[i])
+    return y
         
 if __name__ == '__main__':
     print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
