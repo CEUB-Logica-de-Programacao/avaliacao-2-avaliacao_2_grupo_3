@@ -20,9 +20,17 @@
 # ```
 
 def q1(names, heights):
-    # Escreva seu código aqui
-    pass
+    dict = {}
+    y = []
+    for i in range(0,len(names)):
+        dict[heights[i]] = names[i]
 
+    heights2 = sorted(heights)
+    heights2 = list(reversed(heights2))
 
+    for i in heights2:
+        y.append(dict[i])
+    return y
+        
 if __name__ == '__main__':
     print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
