@@ -20,7 +20,7 @@
 # ```
 
 def q1(names, heights):
-        names = ["Mary","John","Emma"]
+    names = ["Mary","John","Emma"]
     heights = [180,165,170]
     dict_nomes_alturas = {}
     for i,j in zip(names, heights):
@@ -30,6 +30,6 @@ def q1(names, heights):
         for k,v in dict_ordenado:
             lista_altura.append(k)
     return lista_altura
-    pass    
+        
 if __name__ == '__main__':
     print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
