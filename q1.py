@@ -20,12 +20,11 @@
 # ```
 
 def q1(names, heights):
-    def q1(names, heights):
-    names = ["Mary","John","Emma"]
-    heights = [180,165,170]
-    dict_nomes_alturas = {}
-    for i,j in zip (names, heights):
-        dict_nomes_alturas[i] = j
+names = ["Mary","John","Emma"]
+heights = [180,165,170]
+dict_nomes_alturas = {}
+for i,j in zip (names, heights):
+    dict_nomes_alturas[i] = j
     dict_ordenado = sorted(dict_nomes_alturas.items(), key=lambda item : item[1], reverse = True)
     lista_altura = []
     for k,v in dict_ordenado:
