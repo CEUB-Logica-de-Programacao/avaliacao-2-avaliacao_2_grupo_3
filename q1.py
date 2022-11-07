@@ -30,6 +30,6 @@ def q1(names, heights):
         for k,v in dict_ordenado:
             lista_altura.append(k)
     return lista_altura
-
+    pass    
 if __name__ == '__main__':
     print(q1(["Mary", "John", "Emma"], [180, 165, 170]))
