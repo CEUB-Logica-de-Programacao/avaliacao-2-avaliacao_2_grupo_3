@@ -26,6 +26,7 @@
 
 def q2(n):
     # Escreva seu código aqui
+    n = int(input(''))
     def degrau(a):
         if a <= 1:
             return a
@@ -33,8 +34,6 @@ def q2(n):
 
     def formasDeContar(n):
         return degrau(n + 1)
-
-    n = int(input('Quantidade de degraus: '))
     
     print(f'{formasDeContar(n)}')
 
