@@ -34,6 +34,8 @@ def q2(n):
     def formasDeContar(n):
         return degrau(n + 1)
 
+    n = int(input('Quantidade de degraus: '))
+    
     print(f'{formasDeContar(n)}')
 
 if __name__ == '__main__':
